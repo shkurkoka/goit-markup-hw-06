@@ -564,6 +564,39 @@ img{
     height: 24px;
 }
 
+.subscribe{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+
+.subscribe-input{
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.subscribe-btn{
+    width: 165px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 16px;
+    color: #FFFFFF;
+    background: #4D5AE5;
+    border-radius: 4px;
+}
 
 /* ------------------------------------------------MODAL------------------------------------------ */
 

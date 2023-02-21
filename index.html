@@ -388,6 +388,19 @@
                         </li>
                     </ul>
                 </div>
+
+                <form name="subscribe_form" autocomplete="on" novalidate action="">
+                    <label class="subscribe" for="">
+                        Subscribe
+                        <input class="subscribe-input" type="email" name="email" placeholder="E-mail" autofocus>
+                    </label>
+
+                    <button class="subscribe-btn" type="submit"><span>Subscribe </span>
+                        <svg>
+                            <use href=""></use>
+                        </svg> 
+                    </button>
+                </form>
             </div>
         </div>   
     </footer>
@@ -399,7 +412,38 @@
                     <use href="./images/symbol-defs.svg#icon-close-btn"></use>
                 </svg>
             </button>
-            <div></div>
+            <form action="">
+                <fieldset>
+                    <legend class="modal-form-title"></legend>
+
+                    <label class="modal-form-label" for="">
+                        Name
+                        <input class="modal-form-input" type="text" name="username">
+                    </label>
+                    
+                    <label class="modal-form-label" for="">
+                        Phone
+                        <input class="modal-form-input" type="tel" name="tel">
+                    </label>
+
+                    <label class="modal-form-label" for="">
+                        Email
+                        <input class="modal-form-input" type="email" name="email">
+                    </label>
+
+                    <label class="modal-form-label" for="">
+                        Comment
+                        <textarea class="modal-form-text" name="" id="" cols="30" rows="10"></textarea>
+                    </label>
+
+                    <label class="modal-form-checkbox" for="">
+                        I accept the terms and conditions of the <a href="">Privacy Policy</a>
+                        <input  type="checkbox" name="newsletter">
+                    </label>
+
+                    <button class="modal-form-btn">Send</button>
+                </fieldset>
+            </form>
         </div>
     </div>
     
