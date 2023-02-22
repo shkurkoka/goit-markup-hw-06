@@ -389,20 +389,20 @@
                     </ul>
                 </div>
 
-                <form name="subscribe_form" autocomplete="on" novalidate action="">
-                    <label class="subscribe" for="">
+                <form class="subscribe-form" name="subscribe-form" autocomplete="on" novalidate action="">
+                    <label class="subscribe-label" for="">
                         Subscribe
-                        <input class="subscribe-input" type="email" name="email" placeholder="E-mail" autofocus>
+                        <input class="subscribe-input" type="email" name="email" placeholder="E-mail">
                     </label>
-
+    
                     <button class="subscribe-btn" type="submit"><span>Subscribe </span>
-                        <svg>
-                            <use href=""></use>
+                        <svg class="subscribe-icon">
+                            <use href="./images/symbol-defs.svg#icon-send"></use>
                         </svg> 
                     </button>
                 </form>
             </div>
-        </div>   
+        </div>  
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
@@ -412,9 +412,9 @@
                     <use href="./images/symbol-defs.svg#icon-close-btn"></use>
                 </svg>
             </button>
-            <form action="">
-                <fieldset>
-                    <legend class="modal-form-title"></legend>
+            <form class="modal-form" action="">
+                <fieldset class="modal-fieldset">
+                    <legend class="modal-form-title">Leave your contacts and we will call you back</legend>
 
                     <label class="modal-form-label" for="">
                         Name
@@ -435,14 +435,14 @@
                         Comment
                         <textarea class="modal-form-text" name="" id="" cols="30" rows="10"></textarea>
                     </label>
-
+                </fieldset>
+                    
                     <label class="modal-form-checkbox" for="">
                         I accept the terms and conditions of the <a href="">Privacy Policy</a>
                         <input  type="checkbox" name="newsletter">
                     </label>
 
                     <button class="modal-form-btn">Send</button>
-                </fieldset>
             </form>
         </div>
     </div>

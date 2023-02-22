@@ -564,29 +564,52 @@ img{
     height: 24px;
 }
 
-.subscribe{
+.subscribe-form{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-left: 80px;
+}
+
+.subscribe-label{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 16px;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
 }
 
 .subscribe-input{
     width: 264px;
     height: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    margin-top: 16px;
     padding: 8px 16px;
 }
 
 .subscribe-btn{
     width: 165px;
     height: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -595,7 +618,14 @@ img{
     gap: 16px;
     color: #FFFFFF;
     background: #4D5AE5;
+    border: none;
     border-radius: 4px;
+    margin-left: 24px;
+}
+
+.subscribe-icon{
+    width: 24px;
+    height: 24px;
 }
 
 /* ------------------------------------------------MODAL------------------------------------------ */
@@ -650,4 +680,54 @@ img{
     width: 8px;
     height: 8px;
     fill: black;
+}
+
+.modal-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-fieldset{
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.modal-form-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--special-text);
+    margin-bottom: 16px;
+}
+
+.modal-form-label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.8;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    margin-bottom: 8px;
+}
+
+.modal-form-input{
+    margin-top: 4px;
+}
+
+.modal-form-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 32px;
+    gap: 10px;
+    width: 169px;
+    height: 56px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
