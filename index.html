@@ -412,37 +412,45 @@
                     <use href="./images/symbol-defs.svg#icon-close-btn"></use>
                 </svg>
             </button>
-            <form class="modal-form" action="">
-                <fieldset class="modal-fieldset">
-                    <legend class="modal-form-title">Leave your contacts and we will call you back</legend>
+            <form class="modal-form">
+                <b class="modal-form-title">Leave your contacts and we will call you back</b>
 
-                    <label class="modal-form-label" for="">
+                <div class="modal-form-flex">
+                    <p class="modal-form-label" for="">
                         Name
-                        <input class="modal-form-input" type="text" name="username">
-                    </label>
+                    </p>
+                    <input class="modal-form-input" type="text" name="username">
+                </div>
                     
-                    <label class="modal-form-label" for="">
+                <div class="modal-form-flex">
+                    <p class="modal-form-label" for="">
                         Phone
-                        <input class="modal-form-input" type="tel" name="tel">
-                    </label>
+                    </p>
+                    <input class="modal-form-input" type="tel" name="tel">
+                </div>
 
-                    <label class="modal-form-label" for="">
+                <div class="modal-form-flex">
+                    <p class="modal-form-label" for="">
                         Email
-                        <input class="modal-form-input" type="email" name="email">
-                    </label>
+                    </p>
+                    <input class="modal-form-input" type="email" name="email">
+                </div>
 
-                    <label class="modal-form-label" for="">
+                <div class="modal-form-flex">
+                    <p class="modal-form-label" for="">
                         Comment
-                        <textarea class="modal-form-text" name="" id="" cols="30" rows="10"></textarea>
-                    </label>
-                </fieldset>
+                    </p>
+                    <textarea class="modal-form-text" name="" id="" placeholder="Text input"></textarea>
+                </div>
                     
-                    <label class="modal-form-checkbox" for="">
-                        I accept the terms and conditions of the <a href="">Privacy Policy</a>
-                        <input  type="checkbox" name="newsletter">
-                    </label>
+                <div class="modal-form-check">
+                    <input class="modal-form-checkbox" type="checkbox" name="newsletter">
+                    <p class="modal-form-label" for="">
+                        I accept the terms and conditions of the <a class="modal-form-link" href="">Privacy Policy</a>
+                    </p>
+                </div>
 
-                    <button class="modal-form-btn">Send</button>
+                <button class="modal-form-btn">Send</button>
             </form>
         </div>
     </div>
