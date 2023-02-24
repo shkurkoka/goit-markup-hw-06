@@ -392,7 +392,7 @@
                 <form class="subscribe-form" name="subscribe-form" autocomplete="on" novalidate action="">
                     <b class="subscribe-title">Subscribe</b>
                     <div class="flex">
-                        <input class="subscribe-input" type="email" name="email" placeholder="E-mail">
+                        <input class="subscribe-input" type="email" name="email" placeholder="E-mail" required>
         
                         <button class="subscribe-btn" type="submit"><span>Subscribe</span>
                             <svg class="subscribe-icon">
@@ -416,38 +416,47 @@
                 <b class="modal-form-title">Leave your contacts and we will call you back</b>
 
                 <div class="modal-form-flex">
-                    <p class="modal-form-label" for="">
+                    <label class="modal-form-label" for="">
                         Name
-                    </p>
-                    <input class="modal-form-input" type="text" name="username">
+                    </label>
+                    <input class="modal-form-input" type="text" name="username" required>
+                    <svg class="modal-form-input-svg" width="18px" height="24px">
+                        <use href="./images/symbol-defs.svg#icon-person"></use>
+                    </svg>
                 </div>
                     
                 <div class="modal-form-flex">
-                    <p class="modal-form-label" for="">
+                    <label class="modal-form-label" for="">
                         Phone
-                    </p>
-                    <input class="modal-form-input" type="tel" name="tel">
+                    </label>
+                    <input class="modal-form-input" type="tel" name="tel" required>
+                    <svg class="modal-form-input-svg" width="18px" height="24px">
+                        <use href="./images/symbol-defs.svg#icon-phone"></use>
+                    </svg>
                 </div>
 
                 <div class="modal-form-flex">
-                    <p class="modal-form-label" for="">
+                    <label class="modal-form-label" for="">
                         Email
-                    </p>
-                    <input class="modal-form-input" type="email" name="email">
+                    </label>
+                    <input class="modal-form-input" type="email" name="email" required>
+                    <svg class="modal-form-input-svg" width="18px" height="24px">
+                        <use href="./images/symbol-defs.svg#icon-email"></use>
+                    </svg>
                 </div>
 
                 <div class="modal-form-flex">
-                    <p class="modal-form-label" for="">
+                    <label class="modal-form-label" for="">
                         Comment
-                    </p>
+                    </label>
                     <textarea class="modal-form-text" name="" id="" placeholder="Text input"></textarea>
                 </div>
                     
-                <div class="modal-form-check">
-                    <input class="modal-form-checkbox" type="checkbox" name="newsletter">
-                    <p class="modal-form-label" for="">
+                <div class="modal-form-pol">
+                    <label class="modal-form-label" for="">
+                        <input class="modal-form-pol-input" type="checkbox" name="newsletter" required>
                         I accept the terms and conditions of the <a class="modal-form-link" href="">Privacy Policy</a>
-                    </p>
+                    </label>
                 </div>
 
                 <button class="modal-form-btn">Send</button>

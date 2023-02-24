@@ -629,7 +629,7 @@ img{
     margin-left: 24px;
 }
 
-.subscribe-btn:active{
+.subscribe-btn:hover, .subscribe-btn:focus{
     background-color: var(--hover-active);
 }
 
@@ -686,10 +686,13 @@ img{
     border-radius: 50%;
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:active{
-    background: #404BBF;
+    background-color: var(--hover-active);
 }
 
 .modal-btn:active .modal-icon{
@@ -723,6 +726,7 @@ img{
 }
 
 .modal-form-flex{
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 8px;
@@ -744,6 +748,26 @@ img{
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding: 8px 38px;
+    outline: none;
+    transition-property: border, border-radius;
+}
+
+.modal-form-input:focus{
+    border: 1px solid #4D5AE5;
+    border-radius: 4px;
+}
+
+.modal-form-input:focus +.modal-form-input-svg{
+    fill: #4D5AE5;
+}
+
+.modal-form-input-svg{
+    position: absolute;
+    left: 16px;
+    top: 60%;
+    transform: translateY(-45%);
+    transition-property: fill;
 }
 
 .modal-form-text{
@@ -753,6 +777,13 @@ img{
     border-radius: 4px;
     resize: none;
     padding: 8px 16px;
+    outline: none;
+    transition-property: border, border-radius;
+}
+
+.modal-form-text:focus{
+    border: 1px solid #4D5AE5;
+    border-radius: 4px;
 }
 
 .modal-form-text::placeholder{
@@ -765,14 +796,17 @@ img{
     color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-check{
+.modal-form-pol{
     display: flex;
     flex-direction: row;
     margin-top: 16px;
 }
 
-.modal-form-checkbox{
-
+.modal-form-pol-input{
+    width: 16px;
+    height: 16px; 
+    border: 1.25px solid #2E2F42;
+    border-radius: 2px;
 }
 
 .modal-form-link{
@@ -801,6 +835,14 @@ img{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 4px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin-top: 24px;
     padding: 16px 32px;
+    cursor: pointer;
+}
+
+.modal-form-btn:hover, .modal-form-btn:focus{
+    background-color: var(--hover-active);
 }
