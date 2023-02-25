@@ -705,6 +705,8 @@ img{
     fill: black;
 }
 
+/* ------------------------------------------------MODAL FORM------------------------------------------ */
+
 .modal-form{
     display: flex;
     flex-direction: column;
@@ -750,16 +752,31 @@ img{
     border-radius: 4px;
     padding: 8px 38px;
     outline: none;
-    transition-property: border, border-radius;
+    transition-property: border;
 }
 
 .modal-form-input:focus{
     border: 1px solid #4D5AE5;
-    border-radius: 4px;
 }
 
-.modal-form-input:focus +.modal-form-input-svg{
+.modal-form-input:hover {
+    border: 1px solid #4D5AE5;
+}
+
+.modal-form-input:hover + .modal-form-input-svg {
     fill: #4D5AE5;
+}
+
+.modal-form-input:focus + .modal-form-input-svg{
+    fill: #4D5AE5;
+}
+
+.modal-form-input-svg:hover{
+    fill: #4D5AE5;
+}
+
+.modal-form-input-svg:hover + .modal-form-input {
+    border: 1px solid #4D5AE5;
 }
 
 .modal-form-input-svg{
@@ -786,6 +803,11 @@ img{
     border-radius: 4px;
 }
 
+.modal-form-text:hover {
+    border: 1px solid #4D5AE5;
+    border-radius: 4px;
+}
+
 .modal-form-text::placeholder{
     font-family: 'Roboto';
     font-style: normal;
@@ -796,17 +818,51 @@ img{
     color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-pol{
-    display: flex;
-    flex-direction: row;
-    margin-top: 16px;
+.modal-form-check{
+    position: relative;
+    justify-content: flex-start;
+    margin-top: 8px;
 }
 
-.modal-form-pol-input{
+.check-text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.8;
+    letter-spacing: 0.04em;
+    color: #757575;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: baseline;
+}
+
+.check-text::before{
+    position: relative;
+    top: 3px;
+    content: '';
     width: 16px;
     height: 16px; 
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
+    margin-right: 8px;
+}
+
+.modal-form-check-input:checked + .check-text::before{
+    background: var(--hover-active);
+    border: 1.25px solid var(--hover-active);
+    background-image: url(../images/check.svg);
+    background-position: center;
+    background-size: 10px 8px;
+    background-repeat: no-repeat;
+}
+
+.modal-form-check-input:focus + .check-text::before{
+    border-color: var(--hover-active);
+}
+
+.modal-form-check-input:hover + .check-text::before {
+    border-color: var(--hover-active);
 }
 
 .modal-form-link{
@@ -838,7 +894,7 @@ img{
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    margin-top: 24px;
+    margin: 24px 0;
     padding: 16px 32px;
     cursor: pointer;
 }
